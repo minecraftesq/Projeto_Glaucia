@@ -1,0 +1,97 @@
+body {
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+ul{
+    padding: 0px!important;
+}
+
+#logo {
+    max-width:195px;
+    max-height:30px;        
+    width: 90%;
+    height: auto;
+}
+
+
+.menu_principal{
+    width: 100%;
+    background-color:#9370DB;
+    height: 70px;
+}
+
+.header_1 {
+    width: 100%;
+    background-color:#9370DB;
+}
+
+main{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.logo{
+    float: left;
+    padding: 16px;
+    width: 75%;
+}
+
+.redes_sociais ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin-left: 15px;
+}
+.redes_sociais {
+    float: right;
+    width: 20%;
+}
+
+.col-100{
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.header_2{
+    width: 980px;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    padding: 14px;
+}
+
+.menu-urls{
+    border-bottom: 3px solid #ececec;
+    height: 80px;
+}
+
+.menu{
+    width: 70%;
+    float: left;
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 17px;
+    color: #4F4F4F;
+}
+
+.menu ul li a{
+    color: #4F4F4F;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.menu ul li a:hover{
+    color: #836FFF;
+    padding-bottom: 30px;
+    border-bottom: 4px solid #836FFF;
+}
+
