@@ -1,7 +1,9 @@
 body {
-    width:100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
+    padding: 0;
+    /*background: linear-gradient(72deg, cor1 1%, cor2 99%)*/
 }
 
 ul{
@@ -89,9 +91,91 @@ main{
     text-transform: uppercase;
 }
 
+.menu ul li:hover{
+    color: #836FFF;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #836FFF;
+}
+
+
 .menu ul li a:hover{
     color: #836FFF;
     padding-bottom: 30px;
-    border-bottom: 4px solid #836FFF;
+    border-bottom: 2px solid #836FFF;
 }
 
+/* Carrossel */
+.content{
+    height: 300px;
+    width: 800px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 12px;
+    border: solid 2px #ffffff;
+    margin: 6px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover{
+    background-color: #ffffff;
+}
+
+.content input{
+     display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: 1.5s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide_1:checked ~ .s1{
+    margin-left: 0;
+
+}
+
+
+#slide_2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide_3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#slide_4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#slide_5:checked ~ .s1{
+    margin-left: -80%;
+}
