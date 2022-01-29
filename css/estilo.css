@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -28,6 +31,7 @@ ul{
     width: 100%;
     background-color:#9370DB;
 }
+
 
 main{
     margin: 0 auto;
@@ -179,3 +183,87 @@ main{
 #slide_5:checked ~ .s1{
     margin-left: -80%;
 }
+
+.conteudo{
+    margin-top: 500px;
+    width: 100%;
+    height: 700px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.texto_destaque{
+    color: #443d43;
+}
+
+.texto_secundario{
+    color: #9a9a9a;
+}
+
+
+/* Caixinhas da assinatura*/
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_pago strong{
+    color: rgb(5, 2, 29);
+}
+.cards a{
+    text-decoration: none;
+}
+.cards:hover{
+    cursor: pointer;
+}
+.cards ul{
+    list-style: none;
+}
+.card_gratuito ul{
+    text-align: left;
+}
+
+.card_pago ul{
+    text-align: left;
+}
+.card_gratuito{
+    border-radius: 10px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 40px;
+    margin: 30px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    border-left: 5px solid #9370DB;
+}
+
+.card_gratuito:hover{
+    box-shadow: 7px 7px 13px 0px #646264;
+}
+.card_pago:hover{
+    box-shadow: 7px 7px 13px 0px #646264;
+}
+.card_pago{
+    border-radius: 10px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 40px;
+    margin: 30px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    border-left: 5px solid #9370DB;
+}
+
+.card_pago p{
+    color: #a3a5ae;
+    font-size: 16px;
+}
+.card_gratuito p{
+    color: #a3a5ae;
+    font-size: 16px;
+}
+   
+.imagem{
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+}
+   

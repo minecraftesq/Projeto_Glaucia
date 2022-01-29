@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <title>Projeto Glaucia</title>
 </head>
+
 <body>
     <header class="menu_principal">
         <main>
@@ -37,7 +39,7 @@
                             <a href="">
                                 <img src="./img/tw.png">
                             </a>
-                        </li>               
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -51,64 +53,107 @@
                         </li>
                         <li>
                             <a href=""> Quem Somos</a>
-                        </li>               
+                        </li>
                         <li>
                             <a href=""> Contato</a>
-                        </li>            
+                        </li>
                         <li>
                             <a href=""> Login </a>
-                        </li>           
+                        </li>
                         <li>
-                            <a href=""> Assinatura</a>
-                        </li>                
+                            <a href="#assinatura"> Assinatura</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </main>
-        <!-- Slide Show  -->
-        <div class="col-100">
-            
-        </div>
-        <div class="content">
-            <div class="slides">
-                <input type="radio" name="slide" id="slide_1" checked onclick="setarRadio(0)">
-                <input type="radio" name="slide" id="slide_2" onclick="setarRadio(1)">
-                <input type="radio" name="slide" id="slide_3" onclick="setarRadio(2)">
-                <input type="radio" name="slide" id="slide_4" onclick="setarRadio(3)">
-                <input type="radio" name="slide" id="slide_5" onclick="setarRadio(4)">
+    </header>
+    <!-- Slide Show  -->
 
-                <div class="slide s1">
-                    <img src="./img/slide_1.png" alt="imagem 1">
-                </div>
-                <div class="slide">
-                    <img src="./img/slide_2.png" alt="imagem 2">
-                </div>
-                <div class="slide">
-                    <img src="./img/slide_3.png" alt="imagem 3">
-                </div>
-                <div class="slide">
-                    <img src="./img/slide_4.png" alt="imagem 4">
-                </div>
-                <div class="slide">
-                    <img src="./img/slide_5.png" alt="imagem 5">
-                </div>
+    <div class="content">
+        <div class="slides">
+            <input type="radio" name="slide" id="slide_1" checked onclick="setarRadio(0)">
+            <input type="radio" name="slide" id="slide_2" onclick="setarRadio(1)">
+            <input type="radio" name="slide" id="slide_3" onclick="setarRadio(2)">
+            <input type="radio" name="slide" id="slide_4" onclick="setarRadio(3)">
+            <input type="radio" name="slide" id="slide_5" onclick="setarRadio(4)">
 
-                <div class="navegacao">
-                    <label for="slide_1" class="bar"></label>
-                    <label for="slide_2" class="bar"></label>
-                    <label for="slide_3" class="bar"></label>
-                    <label for="slide_4" class="bar"></label>
-                    <label for="slide_5" class="bar"></label>
-                </div>
+            <div class="slide s1">
+                <img src="./img/slide_1.png" alt="imagem 1">
+            </div>
+            <div class="slide">
+                <img src="./img/slide_2.png" alt="imagem 2">
+            </div>
+            <div class="slide">
+                <img src="./img/slide_3.png" alt="imagem 3">
+            </div>
+            <div class="slide">
+                <img src="./img/slide_4.png" alt="imagem 4">
+            </div>
+            <div class="slide">
+                <img src="./img/slide_5.png" alt="imagem 5">
+            </div>
+
+            <div class="navegacao">
+                <label for="slide_1" class="bar"></label>
+                <label for="slide_2" class="bar"></label>
+                <label for="slide_3" class="bar"></label>
+                <label for="slide_4" class="bar"></label>
+                <label for="slide_5" class="bar"></label>
             </div>
         </div>
-    </header>
+    </div>
+
+    <div class="conteudo">
+        <h1 class="texto_destaque">Conheça nosso site</h1>
+        <p class="texto_secundario">Nosso site apresenta propostas de redação para que alunos que estão se preparando para ENEM e outros vestibulares possam praticar com temas atuais</p>
+        <div class="cards">
+            <a name="assinatura">
+            <a href="https://www.youtube.com/">
+                <div class="card_gratuito">
+                    <h2>Plano Gratuito</h2>
+                    <ul>
+                        <li>
+                            <p>Tenha acesso a uma proposta de redação por mês</p>
+                        </li>
+                        <li>
+                            <p>Baixe o PDF e acesse de onde quiser</p>
+                        </li>
+                        <li>
+                            <p>Navegue gratuitamente quanto quiser</p>
+                        </li>
+                    </ul>
+                    <img class="imagem" src="./img/gratis.png" alt="simbolo gratuito">
+                </div>
+            </a>
+            <a href="https://www.youtube.com/">
+                <div class="card_pago">
+                    <h2>Plano Premiun</h2>
+                    <ul>
+                        <li>
+                            <p>Tenha acesso a uma proposta de redação por semana</p>
+                        </li>
+                        <li>
+                            <p>Baixe o PDF e acesse de onde quiser</p>
+                        </li>
+                        <li>
+                            <p>Invista <strong>R$5,00</strong> apenas uma vez e tenha acesso completo</p>
+                        </li>
+                    </ul>
+                    <img class="imagem" src="./img/dinheiro.png" alt="simbolo dinheiro">
+                </div>
+            </a>
+        </div>
+
+    </div>
+
     <!--script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./js/slick.min.js"--></script>    
-    <script type="text/javascript" src="./js/main.js"></script>           
-    
+    <script type="text/javascript" src="./js/slick.min.js"-->
+    </script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
     <!--a href='https://br.freepik.com/fotos-vetores-gratis/fundo-azul'>Fundo azul foto criado por rawpixel.com - br.freepik.com</a-->
 </body>
-</html>
 
+</html>

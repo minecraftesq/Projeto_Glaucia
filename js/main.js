@@ -12,3 +12,4 @@ var meuInterval = setInterval(function(){
 function setarRadio(indice){
     i = indice;
 }
+
