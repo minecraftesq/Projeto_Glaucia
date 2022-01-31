@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: 0 auto;
     padding: 0;
@@ -199,13 +199,63 @@ main{
 .texto_secundario{
     color: #9a9a9a;
 }
+/* Informacoes - imagem*/
+.informacoes{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+    background-color: #836FFF;
+    position: relative;
+}
+
+.imagem-informativa{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    float: left;
+    margin-left: 20%;
+    border-radius: 100%;
+    margin-top: 100px;
+    margin-right: 40%;
+    background-image: url(../img/terra.png);
+    background-color:#000;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border: 10px solid #000;
+}
+
+.conteudo-informativo{
+    width: 500px;
+    height: 500px;
+    margin-left: 50%;
+    padding-top: 100px;
+    margin-top: 100px;
+    position: relative;
+    background-image: url(../img/informacoes-glaucia.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.conteudo-informativo ul li{
+    list-style: none;
+}
+
+.conteudo-informativo ul li p{
+    font-family:monospace, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+}
 
 
 /* Caixinhas da assinatura*/
+
 .cards{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .card_pago strong{
     color: rgb(5, 2, 29);
@@ -231,7 +281,7 @@ main{
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 40px;
     margin: 30px;
-    width: 400px;
+    width: 350px;
     transition: all 0.3s ease-out;
     border-left: 5px solid #9370DB;
 }
@@ -247,7 +297,7 @@ main{
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
     padding: 40px;
     margin: 30px;
-    width: 400px;
+    width: 350px;
     transition: all 0.3s ease-out;
     border-left: 5px solid #9370DB;
 }
@@ -266,4 +316,67 @@ main{
     max-width: 64px;
     max-height: 64px;
 }
-   
+
+/* footer  */
+
+.footer{
+    margin: 0 auto;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    margin-top: 550px;
+}
+
+.col-2{
+    font-family: Andale Mono, monospace, sans-serif;
+    width: 40%;
+    float: left;
+    position: relative;
+    text-align: center;
+    padding-right: 10%;
+}
+
+.col-2 ul{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.col-2 ul li{
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+    margin-left: 30%;
+    color: rgb(39, 37, 37);
+}
+
+
+.footer-1{
+    width: 100%;
+    height: 200px;
+    list-style: none; 
+    background-color: #f1f1f1;  
+}
+
+.footer-1 a{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+}
+
+.redes_sociais-footer ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.redes_sociais-footer{  
+    position: relative;
+    float: right;
+    width: 40%;
+    list-style: none;
+    margin-right: 15%;
+}
+
+.footer-2{
+    height: 50px;
+    width: 100%;
+    background-color: #333333;
+}
+
