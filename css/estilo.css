@@ -114,8 +114,8 @@ main{
     width: 800px;
     border-radius: 20px;
     overflow: hidden;
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -185,56 +185,75 @@ main{
 }
 
 .conteudo{
-    margin-top: 500px;
+    margin-top: 250px;
     width: 100%;
-    height: 700px;
+    height: 473px;
     background-color: #ffffff;
     text-align: center;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.conteudo a h1{
+    margin-top: 600px;
 }
 
 .texto_destaque{
+    font-size: 35px;
     color: #443d43;
 }
 
 .texto_secundario{
+    font-size: 15px;
     color: #9a9a9a;
 }
 /* Informacoes - imagem*/
+
+.triangulo{
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    position: relative;
+    background-image: url(../img/triangulo.png);
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position: bottom;
+}
+
 .informacoes{
     margin-top: 100px;
     width: 100%;
     height: 600px;
-    background-color: #836FFF;
+    background-color: #836fff;
     position: relative;
 }
 
 .imagem-informativa{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     position: relative;
     float: left;
-    margin-left: 20%;
+    margin-left: 25%;
     border-radius: 100%;
-    margin-top: 100px;
+    margin-top: 130px;
     margin-right: 40%;
     background-image: url(../img/terra.png);
     background-color:#000;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 80%;
     background-position: center;
-    border: 10px solid #000;
+    border: 1px solid #000;
 }
 
 .conteudo-informativo{
     width: 500px;
     height: 500px;
     margin-left: 50%;
-    padding-top: 100px;
-    margin-top: 100px;
+    margin-top: 30px;
     position: relative;
     background-image: url(../img/informacoes-glaucia.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 50%;
     background-position: center;
 }
 
@@ -247,6 +266,44 @@ main{
     color: #ffffff;
     font-size: 20px;
 }
+/* pq a gente? */
+
+.conteudo-3{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(248, 248, 248);
+    position: relative;
+    margin-top: 20%;
+    display: flex;
+}
+
+.imagem-3{
+    height: 500px;
+    width: 30%;
+    float: right;
+    position: relative;
+    background-image: url(../img/pessoa.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-top: 20px;
+    margin-right: 10%;
+}
+
+.texto-3{
+    width: 30%;
+    height: 400px;
+    padding-top: 70px;
+    padding-left: 20%;
+}
+
+.texto-3 p{
+    float: left;
+    color: #333333;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: right;
+}
 
 
 /* Caixinhas da assinatura*/
@@ -257,14 +314,12 @@ main{
     align-items: center;
     width: 100%;
 }
+
 .card_pago strong{
     color: rgb(5, 2, 29);
 }
 .cards a{
     text-decoration: none;
-}
-.cards:hover{
-    cursor: pointer;
 }
 .cards ul{
     list-style: none;
@@ -288,9 +343,11 @@ main{
 
 .card_gratuito:hover{
     box-shadow: 7px 7px 13px 0px #646264;
+    cursor: pointer;
 }
 .card_pago:hover{
     box-shadow: 7px 7px 13px 0px #646264;
+    cursor: pointer;
 }
 .card_pago{
     border-radius: 10px;
@@ -317,14 +374,98 @@ main{
     max-height: 64px;
 }
 
+/* Contato */
+
+.contato{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 650px;
+    background: linear-gradient(0deg, #e0e0e0, #ffffff 90%);
+    border-bottom: 2px solid #3a3a3a;
+}
+
+.p{
+    width: 100%;
+    height: 40px;
+    float: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.p p{
+    color: #3a3a3a;
+}
+
+.imagens-sociais{
+    height: 250px;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.contato ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+.img-contato{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 5px solid #4b4b4b; 
+    margin-left: 30px;
+    background-color: rgb(253, 253, 253);
+}
+
+
+[img-instagram]{
+    background-image: url(../img/instagram.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+[img-youtube]{
+    background-image: url(../img/youtube.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+[img-email]{
+    background-image: url(../img/o-email.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+[img-twitter]{
+    background-image: url(../img/twitter.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+
+
 /* footer  */
 
 .footer{
     margin: 0 auto;
     width: 100%;
-    height: 250px;
+    height: 200px;
     position: relative;
-    margin-top: 550px;
 }
 
 .col-2{
@@ -375,7 +516,7 @@ main{
 }
 
 .footer-2{
-    height: 50px;
+    height: 10px;
     width: 100%;
     background-color: #333333;
 }
